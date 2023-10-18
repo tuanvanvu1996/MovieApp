@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC985B8A57B2C14A6326DF35 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8E50DCD5A443FE58511D62 /* Pods_MovieApp.framework */; };
+		F442EBB42ADF690400D32A64 /* TrendingMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F442EBB32ADF690400D32A64 /* TrendingMovie.swift */; };
 		F466FFD42AD1869C00FE92E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466FFD32AD1869C00FE92E6 /* AppDelegate.swift */; };
 		F466FFD62AD1869C00FE92E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466FFD52AD1869C00FE92E6 /* SceneDelegate.swift */; };
 		F466FFD82AD1869C00FE92E6 /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466FFD72AD1869C00FE92E6 /* OnBoardViewController.swift */; };
@@ -66,6 +67,7 @@
 		1252FBE046A96C475226A6DA /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
 		65119F0BD027FE3C32E48472 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6E8E50DCD5A443FE58511D62 /* Pods_MovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F442EBB32ADF690400D32A64 /* TrendingMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovie.swift; sourceTree = "<group>"; };
 		F466FFD02AD1869C00FE92E6 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F466FFD32AD1869C00FE92E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F466FFD52AD1869C00FE92E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				F496A8052AD752B500777588 /* ApiCaller.swift */,
+				F442EBB32ADF690400D32A64 /* TrendingMovie.swift */,
 			);
 			path = "Api+Networking";
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				F4A2A01E2AD2BE690067BA92 /* RegisterViewController.swift in Sources */,
 				F4A2A0232AD401530067BA92 /* ForgetPasswordEmailViewController.swift in Sources */,
 				F4A2A02A2AD403510067BA92 /* AuthServices.swift in Sources */,
+				F442EBB42ADF690400D32A64 /* TrendingMovie.swift in Sources */,
 				F4A2A0132AD258760067BA92 /* LoginEmailViewController.swift in Sources */,
 				F466FFD82AD1869C00FE92E6 /* OnBoardViewController.swift in Sources */,
 				F496A80D2AD75F9A00777588 /* HomeViewController.swift in Sources */,

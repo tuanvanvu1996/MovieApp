@@ -9,7 +9,6 @@ import UIKit
 import MBProgressHUD
 import FirebaseAuth
 import FirebaseCore
-import FirebaseStorage
 class RegisterViewController: UIViewController {
     let window = (UIApplication.shared.delegate as? AppDelegate)?.window
     var checkPassword:Bool = false
