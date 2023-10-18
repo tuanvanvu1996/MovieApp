@@ -1,2 +1,2 @@
 # MovieApp
-App Movie
+Onboard Screen App
