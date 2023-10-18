@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="482" id="KGk-i7-Jjw" customClass="HeaderHomeTableViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="592" height="482"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="592" height="482"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuw-Ts-WG4">
+                        <rect key="frame" x="0.0" y="0.0" width="592" height="482"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onBoard2" translatesAutoresizingMaskIntoConstraints="NO" id="xWc-yl-2hU">
+                                <rect key="frame" x="0.0" y="0.0" width="592" height="482"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7A-9q-Fpc">
+                                <rect key="frame" x="130" y="390" width="89" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Trailer">
+                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.1333333333" green="0.1215686275" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vS2-cI-1kQ">
+                                <rect key="frame" x="335.33333333333331" y="390" width="126.66666666666669" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download">
+                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.1333333333" green="0.1215686275" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xWc-yl-2hU" firstAttribute="leading" secondItem="zuw-Ts-WG4" secondAttribute="leading" id="8j4-WU-ZXl"/>
+                            <constraint firstItem="xWc-yl-2hU" firstAttribute="top" secondItem="zuw-Ts-WG4" secondAttribute="top" id="T3x-2k-oNV"/>
+                            <constraint firstAttribute="trailing" secondItem="xWc-yl-2hU" secondAttribute="trailing" id="ahw-hH-boI"/>
+                            <constraint firstAttribute="bottom" secondItem="T7A-9q-Fpc" secondAttribute="bottom" constant="50" id="o6M-cL-UDw"/>
+                            <constraint firstAttribute="bottom" secondItem="xWc-yl-2hU" secondAttribute="bottom" id="uMm-Lu-0dn"/>
+                            <constraint firstAttribute="bottom" secondItem="vS2-cI-1kQ" secondAttribute="bottom" constant="50" id="x5t-8J-NKm"/>
+                            <constraint firstItem="T7A-9q-Fpc" firstAttribute="leading" secondItem="zuw-Ts-WG4" secondAttribute="leading" constant="130" id="zbI-mm-Dji"/>
+                            <constraint firstAttribute="trailing" secondItem="vS2-cI-1kQ" secondAttribute="trailing" constant="130" id="zvn-3A-mQn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zuw-Ts-WG4" secondAttribute="trailing" id="AaN-FI-CMD"/>
+                    <constraint firstAttribute="bottom" secondItem="zuw-Ts-WG4" secondAttribute="bottom" id="DbA-E0-nIW"/>
+                    <constraint firstItem="zuw-Ts-WG4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Opk-mP-edL"/>
+                    <constraint firstItem="zuw-Ts-WG4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Pza-aw-Jh2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerView" destination="xWc-yl-2hU" id="Ph5-cV-V3l"/>
+            </connections>
+            <point key="canvasLocation" x="235.11450381679387" y="39.436619718309863"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="onBoard2" width="368" height="368"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

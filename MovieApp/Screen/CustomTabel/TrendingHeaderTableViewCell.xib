@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TrendingHeaderTableViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHf-ow-iF9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZi-cn-U9R">
+                                <rect key="frame" x="24" y="0.0" width="77" height="44"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bT-nw-KYu">
+                                <rect key="frame" x="212.33333333333334" y="0.0" width="83.666666666666657" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="See all">
+                                    <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.1019607931" green="0.098039209840000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gZi-cn-U9R" firstAttribute="leading" secondItem="OHf-ow-iF9" secondAttribute="leading" constant="24" id="UNB-cQ-PTa"/>
+                            <constraint firstItem="6bT-nw-KYu" firstAttribute="top" secondItem="OHf-ow-iF9" secondAttribute="top" id="Uul-ZY-wQG"/>
+                            <constraint firstItem="gZi-cn-U9R" firstAttribute="top" secondItem="OHf-ow-iF9" secondAttribute="top" id="Xeg-X5-JlG"/>
+                            <constraint firstAttribute="bottom" secondItem="6bT-nw-KYu" secondAttribute="bottom" id="kf2-Mb-IdR"/>
+                            <constraint firstAttribute="bottom" secondItem="gZi-cn-U9R" secondAttribute="bottom" id="nzu-g4-M1t"/>
+                            <constraint firstAttribute="trailing" secondItem="6bT-nw-KYu" secondAttribute="trailing" constant="24" id="tb4-AT-BN8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OHf-ow-iF9" secondAttribute="bottom" id="LSO-5Y-MU0"/>
+                    <constraint firstItem="OHf-ow-iF9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wyg-7c-xl0"/>
+                    <constraint firstItem="OHf-ow-iF9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="o6x-kf-856"/>
+                    <constraint firstAttribute="trailing" secondItem="OHf-ow-iF9" secondAttribute="trailing" id="vL3-Ef-Kn0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="trendingMovieHeader" destination="gZi-cn-U9R" id="BLD-q3-w5a"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
